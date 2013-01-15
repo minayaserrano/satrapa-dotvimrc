@@ -29,12 +29,24 @@ Bundle 'gmarik/vundle'
 " Bundle 'Lokaltog/vim-easymotion'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
+
+" Vombato color scheme
 Bundle 'molok/vim-vombato-colorscheme'
+" Wombat256 color scheme
 Bundle 'vim-scripts/wombat256.vim'
+" TextMate Snippets
+Bundle 'msanders/snipmate.vim'
+" Insert use statements automatically
+Bundle 'arnaud-lb/vim-php-namespace'
+" Symfony stuff
+Bundle 'docteurklein/vim-symfony'
+" PHPUnit support
+Bundle 'docteurklein/vim-phpunit'
 
 " vim-scripts repos
 " Bundle 'L9'
 " Bundle 'FuzzyFinder'
+"
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
 
@@ -83,4 +95,7 @@ if has("gui_running")
 else
     colorscheme wombat256mod
 endif
+
+" phpunit compilation
+com! -nargs=* Phpunit make -c app <q-args> | cw
 
