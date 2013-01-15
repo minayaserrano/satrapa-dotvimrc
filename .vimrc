@@ -29,6 +29,9 @@ Bundle 'gmarik/vundle'
 " Bundle 'Lokaltog/vim-easymotion'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
+Bundle 'molok/vim-vombato-colorscheme'
+Bundle 'vim-scripts/wombat256.vim'
+
 " vim-scripts repos
 " Bundle 'L9'
 " Bundle 'FuzzyFinder'
@@ -71,4 +74,13 @@ set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
+
+"" Colors
+set background=dark
+set t_Co=256
+if has("gui_running")
+    colorscheme vombato
+else
+    colorscheme wombat256mod
+endif
 
