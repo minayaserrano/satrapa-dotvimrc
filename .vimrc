@@ -42,6 +42,10 @@ Bundle 'arnaud-lb/vim-php-namespace'
 Bundle 'docteurklein/vim-symfony'
 " PHPUnit support
 Bundle 'docteurklein/vim-phpunit'
+" PHP5.4 support
+Bundle 'shawncplus/php.vim'
+" NERDTree
+Bundle 'scrooloose/nerdtree'
 
 " vim-scripts repos
 " Bundle 'L9'
@@ -71,6 +75,7 @@ set number                      " Show line numbers
 syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
+set hidden                      " no need save to change buffer
 filetype plugin indent on       " load file type plugins + indentation
 
 
@@ -98,4 +103,15 @@ endif
 
 " phpunit compilation
 com! -nargs=* Phpunit make -c app <q-args> | cw
+
+" php man pages
+" press K on a phpfunction to see the magic
+" You need install doc.php.net/pman through
+" pear install doc.php.net/pman
+set keywordprg=pman
+
+" NERDTree
+autocmd vimenter * if !argc() | NERDTree | endif    " Open NERDTree on vim starts up if no files were specified
+map <C-n> :NERDTreeToggle<CR>                       " Crtl+n to open NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif  " Close vim if only NERDTree
 
