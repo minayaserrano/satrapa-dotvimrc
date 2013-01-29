@@ -46,11 +46,16 @@ Bundle 'docteurklein/vim-phpunit'
 Bundle 'shawncplus/php.vim'
 " NERDTree
 Bundle 'scrooloose/nerdtree'
+" Twig support
+Bundle 'beyondwords/vim-twig'
 
 " vim-scripts repos
 " Bundle 'L9'
 " Bundle 'FuzzyFinder'
-"
+
+" Jinja vim
+Bundle 'Jinja'
+
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
 
@@ -112,6 +117,6 @@ set keywordprg=pman
 
 " NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif    " Open NERDTree on vim starts up if no files were specified
-map <C-n> :NERDTreeToggle<CR>                       " Crtl+n to open NERDTree
+map <F2> :NERDTreeToggle<CR>                       " Crtl+n to open NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif  " Close vim if only NERDTree
 
