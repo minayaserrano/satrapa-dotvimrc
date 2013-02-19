@@ -48,6 +48,10 @@ Bundle 'shawncplus/php.vim'
 Bundle 'scrooloose/nerdtree'
 " Twig support
 Bundle 'beyondwords/vim-twig'
+" HTML snippets
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Surround with parentheses, brackets, quotes, tags...
+Bundle 'tpope/vim-surround'
 
 " vim-scripts repos
 " Bundle 'L9'
