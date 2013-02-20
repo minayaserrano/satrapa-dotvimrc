@@ -52,6 +52,15 @@ Bundle 'beyondwords/vim-twig'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Surround with parentheses, brackets, quotes, tags...
 Bundle 'tpope/vim-surround'
+" Groovy support
+Bundle 'vim-scripts/groovy.vim'
+" Sintax checking
+Bundle 'scrooloose/syntastic'
+" Full path finder
+Bundle 'kien/ctrlp.vim'
+" Better statusline
+"Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/powerline'
 
 " vim-scripts repos
 " Bundle 'L9'
@@ -124,3 +133,7 @@ autocmd vimenter * if !argc() | NERDTree | endif    " Open NERDTree on vim start
 map <F2> :NERDTreeToggle<CR>                       " Crtl+n to open NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif  " Close vim if only NERDTree
 
+" Powerline
+set laststatus=2   " Always show the statusline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+let g:Powerline_symbols = 'fancy'
