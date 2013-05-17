@@ -61,6 +61,8 @@ Bundle 'kien/ctrlp.vim'
 " Better statusline
 "Bundle 'Lokaltog/vim-powerline'
 Bundle 'Lokaltog/powerline'
+" Git support
+Bundle 'tpope/vim-fugitive'
 
 " vim-scripts repos
 " Bundle 'L9'
