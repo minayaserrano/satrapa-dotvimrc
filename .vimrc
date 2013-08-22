@@ -63,6 +63,10 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/powerline'
 " Git support
 Bundle 'tpope/vim-fugitive'
+" Git diff changes
+Bundle 'airblade/vim-gitgutter'
+" Better Markdown support
+Bundle 'tpope/vim-markdown'
 
 " vim-scripts repos
 " Bundle 'L9'
