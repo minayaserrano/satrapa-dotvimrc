@@ -67,6 +67,10 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
 " Better Markdown support
 Bundle 'tpope/vim-markdown'
+" Tagbar
+Bundle 'majutsushi/tagbar'
+" Php tagbar enhance
+Bundle 'techlivezheng/vim-plugin-tagbar-phpctags'
 
 " vim-scripts repos
 " Bundle 'L9'
@@ -143,3 +147,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 set laststatus=2   " Always show the statusline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 let g:Powerline_symbols = 'fancy'
+
+" TagBar
+nmap <F8> :TagbarToggle<CR>
+
+" Vim-plugin-tagbar-phpctags
+let g:tagbar_phpctags_memory_limit = '512M'
