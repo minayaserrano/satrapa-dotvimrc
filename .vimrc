@@ -82,6 +82,9 @@ Bundle 'techlivezheng/vim-plugin-tagbar-phpctags'
 " Jinja vim
 Bundle 'Jinja'
 
+" Jedi vim
+Bundle 'davidhalter/jedi-vim'
+
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
 
