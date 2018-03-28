@@ -35,13 +35,16 @@ Bundle 'molok/vim-vombato-colorscheme'
 " Wombat256 color scheme
 Bundle 'vim-scripts/wombat256.vim'
 " TextMate Snippets
-Bundle 'msanders/snipmate.vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 " Insert use statements automatically
 Bundle 'arnaud-lb/vim-php-namespace'
 " Symfony stuff
 Bundle 'docteurklein/vim-symfony'
 " PHPUnit support
-Bundle 'docteurklein/vim-phpunit'
+" Bundle 'docteurklein/vim-phpunit'
 " PHP5.4 support
 Bundle 'shawncplus/php.vim'
 " NERDTree
